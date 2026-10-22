@@ -1,0 +1,86 @@
+{
+  "manifest_version": 3,
+  "name": "Canais",
+  "version": "1.23.0",
+  "description": "Monitora seus canais favoritos do YouTube, Twitch e Kick e avisa quando entram ao vivo.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "tabs",
+    "offscreen",
+    "contextMenus",
+    "idle"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.twitch.tv/*",
+    "https://kick.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/live_chat*"
+      ],
+      "js": [
+        "chat.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.twitch.tv/*",
+        "https://kick.com/*"
+      ],
+      "js": [
+        "chat.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://www.twitch.tv/*",
+        "https://kick.com/*"
+      ],
+      "js": [
+        "toast.js",
+        "import.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "badges/*.svg",
+        "icons/icon48.png"
+      ],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://www.twitch.tv/*",
+        "https://kick.com/*"
+      ]
+    }
+  ]
+}

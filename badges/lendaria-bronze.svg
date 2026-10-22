@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <path d="M30 60L22 90L33 84L39 93L46 66Z" fill="#5b4bff"/>
+  <path d="M66 60L74 90L63 84L57 93L50 66Z" fill="#ff3d8b"/>
+  <circle cx="48" cy="42" r="36" fill="#8a4f22"/>
+  <circle cx="48" cy="42" r="32" fill="#c27a3e"/>
+  <circle cx="48" cy="42" r="23" fill="none" stroke="#8a4f22" stroke-width="2" opacity=".55"/>
+  <ellipse cx="35.6" cy="65.4" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(233 35.6 65.4)"/><ellipse cx="27.7" cy="59.0" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(255 27.7 59.0)"/><ellipse cx="22.8" cy="50.2" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(277 22.8 50.2)"/><ellipse cx="21.6" cy="40.2" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(299 21.6 40.2)"/><ellipse cx="24.2" cy="30.4" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(321 24.2 30.4)"/><ellipse cx="60.4" cy="65.4" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(-53 60.4 65.4)"/><ellipse cx="68.3" cy="59.0" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(-75 68.3 59.0)"/><ellipse cx="73.2" cy="50.2" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(-97 73.2 50.2)"/><ellipse cx="74.4" cy="40.2" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(-119 74.4 40.2)"/><ellipse cx="71.8" cy="30.4" rx="5" ry="2.4" fill="#eaa56c" transform="rotate(-141 71.8 30.4)"/>
+  <path d="M48.00 24.00L51.88 33.66L62.27 34.36L54.28 41.04L56.82 51.14L48.00 45.60L39.18 51.14L41.72 41.04L33.73 34.36L44.12 33.66Z" fill="#eaa56c" stroke="#8a4f22" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M27 24a28 28 0 0 1 16 -12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+  <text x="48" y="68" text-anchor="middle" font-family="-apple-system, 'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="900" letter-spacing="1" fill="#8a4f22">I</text>
+</svg>
